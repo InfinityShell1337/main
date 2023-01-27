@@ -1,0 +1,46 @@
+#!/bin/bash
+
+#neofetch
+pfetch
+
+export PATH="$HOME/.cargo/bin:$PATH:."
+export EDITOR="helix"
+
+alias ls="exa --icons"
+alias l="ls -laaa"
+alias la="ls -aaa"
+alias ll="ls -l"
+
+alias sl="ls"
+alias dc="cd"
+alias hx="helix"
+alias ,=";"
+
+alias e="$EDITOR"
+alias se="sudo $EDITOR"
+alias c="clear"
+alias q="exit"
+alias b="sudo btop"
+alias t="tmux new-session -A -s main"
+alias x="chmod +x"
+alias ed='ed -lsp "`tput setaf 5`❯ `tput sgr0`"'
+alias cmmm='~/cmmm+mm/Linux/CMMM+MM.x86_64'
+
+find-line () {
+  vim $(rg --hidden --line-number . | fzf --delimiter ':' --preview 'bat --color=always --highlight-line {2} {1}' | awk -F ':' '{print "+"$2" "$1}')
+}
+
+open () {
+  FILE="$(fzf -m --preview='bat --color=always -n {}')" && e $FILE
+}
+
+man () {
+  /usr/bin/env man $@ | bat -l man --wrap=never --number
+}
+
+minimal () {
+  clear
+  export PROMPT=''
+  export PS1=''
+  unalias -a
+}

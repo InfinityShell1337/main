@@ -1,0 +1,56 @@
+#theme = "default"
+theme = "dracula"
+#theme = "fleet_dark"
+
+[editor]
+line-number = "relative"
+mouse = true
+bufferline = "multiple"
+shell = ["zsh", "-c"]
+auto-save = true
+cursorline = true
+color-modes = true
+true-color = true
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "position-percentage", "position", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[keys.normal]
+#esc = ["collapse_selection", "keep_primary_selection"]
+
+[keys.normal."\\"]
+w = ":w!"
+q = ":q!"
+x = ":x!"
+c.o = ":config-open"
+c.r = ":config-reload"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "block"
+
+[editor.file-picker]
+hidden = false
+
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+"'" = "'"
+'`' = '`'
+'<' = '>'
+
+[editor.whitespace]
+render = "all"
+
+[editor.indent-guides]
+render = true
+skip-levels = 1
