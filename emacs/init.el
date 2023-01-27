@@ -33,6 +33,21 @@
 ;; Show keybindings (for video)
 ;(use-package command-log-mode)
 
+;; Line numbers
+(column-number-mode)
+(global-display-line-numbers-mode t)
+
+; Disable line numbers for some modes
+(dolist (mode '(org-mode-hook
+                term-mode-hook
+                shell-mode-hook
+                treemacs-mode-hook
+                eshell-mode-hook))
+  (add-hook mode (lambda () (display-line-numbers-mode 0))))
+
+;; doom-themes
+(use-package doom-themes)
+
 ;; all-the-icons
 (use-package all-the-icons)
 
@@ -68,10 +83,14 @@
 ;; Doom modeline
 (use-package doom-modeline
   :init (doom-modeline-mode 1)
-  :custom ((doom-modeline-height 15)))
+  :custom ((doom-modeline-height 30)))
+
+;; Disable files~
+(setq make-backup-files nil)
 
 ;; theme
-(load-theme 'tango-dark t)
+;(load-theme 'doom-Iosvkem t)
+(load-theme 'doom-dracula t)
 
 ;; do not touch
 (custom-set-variables
@@ -79,7 +98,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(all-the-icons doom-modeline counsel ivy use-package)))
+ '(custom-safe-themes
+   '("6945dadc749ac5cbd47012cad836f92aea9ebec9f504d32fe89a956260773ca4" default))
+ '(package-selected-packages
+   '(doom-themes all-the-icons doom-modeline counsel ivy use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
