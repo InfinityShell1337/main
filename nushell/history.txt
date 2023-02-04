@@ -1,0 +1,977 @@
+ls
+l
+ls
+whoami 
+n 
+e
+hx
+helix
+helix .config/nushell/config.nu
+q
+adkfhudshfhsg
+ls
+cd
+ls
+source .configrc
+ls
+cd /
+ls
+g 
+g 1
+g 
+s
+c
+l
+ls
+sl
+ls
+alias q='exit'
+alias
+q
+3 + 5
+func
+def test():
+def test () { whoami }
+test
+alias
+alias q
+alias q=exit
+c
+ls
+l
+ls -la
+ls -l
+ls
+n
+p
+g
+ls | where size > 10k
+ls | where size > 10kb
+ls
+ls -la
+;
+:
+ps
+c
+ls
+open .config
+open .configrc
+open .
+help
+help a
+help help
+man man
+help open
+help alias
+alias q = exit
+q
+-2 + 5
+99999999999999999
+(help)
+ls
+la
+ls -la
+vim .config/nushell/config.nu
+helix .config/nushell/config.nu
+q
+config
+config nu
+echo "$EDITOR"
+echo $EDITOR
+env
+echo $HOME
+(config nu)
+hx (config nu)
+helix .config/nushell/config.nu
+ls
+cd .config/nushell/
+c
+ls
+helix env.nu
+$nu
+helix env.nu
+helix $nu.config-path
+helix $nu.env-path
+e
+e .configrc
+ls
+help
+help commands
+tutor
+tutor list
+tutor begin
+tutor begin | e
+tutor begin
+ls | select name
+ls
+ls | select name
+tutor begin
+tutor tables
+ls | get name
+tutor tables
+tutor cells
+(ls).4.name
+(ls).name
+(ls).0
+(ls).1
+(ls).2
+(ls).3
+(ls).4
+(ls).1
+(ls).name
+(ls).4.name
+tutor cells
+tutor expressions
+37457
+tutor echo
+tutor 
+tutor list
+tutor echo
+tutor each
+tutor eac
+tutor each
+echo 1
+echo 1 2 3
+echo 
+echo
+tutor each
+tutor blocks
+tutor variables
+tutor list
+tutor shorthand
+ls
+help help
+help bash
+25c-4vy90v46uy09=54pb
+123 + 456 + 789
+ls
+se /etc/passwd
+sudo e /etc/passwd
+sudo helix /etc/passwd
+ls
+se
+e
+eval "$(starship init zsh)"
+starship init zsh
+source <(/usr/bin/starship init zsh --print-full-init)
+/usr/bin/starship init zsh --print-full-init
+help
+ls
+ps
+(ps).nu
+(ps).name
+(ps).name.126
+ls
+date now | date to-table 
+sys
+sys.host
+(sys).host
+sys
+sys | get host
+(sys).host
+(sys).host.sessions.name
+(sys).host.sessions.name | each { |it| ^echo $it }
+/
+ls
+~
+ls
+ls | length
+ls
+"Hello"
+{<\n>whoami<\n>}
+arch () {<\n>whoami<\n>}
+def arch () {<\n>whoami<\n>}
+arch
+*
+5*6
+5 * 6
+open .
+config nu
+help def-env 
+env
+let-env EDITOR = 'helix'
+open .
+edit
+config nu
+config env
+42 | describe 
+sfhsdgfdhbgkdfsj | describe 
+"" | describe 
+Inf | describe 
+64mb
+0..4
+10..20
+0x101010010101011
+0x11
+0x01
+0x11
+0x011
+0x001
+0x010
+0x10
+0x0000010
+[0 1 'two' 3.0] | describe 
+[0 1] | describe 
+null
+null | describe 
+path
+1min | describe 
+2day
+2.19day
+1..2
+{name: sam rank: 10}
+{name: sam 'rank': '10'}
+{<\n>name: sam<\n>rank: 10<\n>}
+[[column1, column2]; [Value1, Value2] [Value3, Value4]]
+[[column1, column2]; [Value1, Value2]; [Value3, Value4]]
+[[column1, column2]; [Value1, Value2] [Value3, Value4]]
+[[name, age]; [Value1, Value2] [Value3, Value4]]
+[{a:1 b:2} {b:1}]
+date now | date to-table 
+sys
+sys.host
+(sys).host.sessions.name | each { |it| ^echo $it }
+(sys).host
+(sys).host.name
+(sys).host.kernel_version
+(sys).host.hostname
+(sys).host.uptime
+(sys).host.sessions
+(sys).host.sessions.(whoami)
+(sys).host.sessions.`whoami`
+(sys).host.sessions
+(sys).host.sessions.arch
+(sys).host.sessions.groups
+(sys).host.sessions.groups.2
+ls
+find . -name 'distros.txt'
+find . -iname 'distros.txt'
+cat .oh-my-zsh/plugins/emoji/gemoji_db.json
+open .oh-my-zsh/plugins/emoji/gemoji_db.json
+open distros.txt
+ls
+cd testing/
+ls
+open awk.awk
+open temperatures.txt
+open temperatures.txt | lines
+open temperatures.txt | lines column "|"
+open temperatures.txt | lines | split column "|"
+open temperatures.txt | lines | split column " "
+open temperatures.txt | lines | split column " " temp unit
+ls
+e awk.awk
+e temperatures.txt
+open temperatures.txt | lines | split column " " temp unit
+cd ../.config/helix/
+ls
+open config.toml
+open config.toml | cat
+open config.toml
+╭────────┬──────────────────────────────────────────────────────────────╮
+│        │ ╭───────────────┬──────────────────────────────────────────╮ │
+│ editor │ │               │ ╭───┬───╮                                │ │
+│        │ │ auto-pairs    │ │ " │ " │                                │ │
+│        │ │               │ │ ( │ ) │                                │ │
+│        │ │               │ │ < │ > │                                │ │
+│        │ │               │ │ [ │ ] │                                │ │
+│        │ │               │ │ ` │ ` │                                │ │
+│        │ │               │ │ { │ } │                                │ │
+│        │ │               │ ╰───┴───╯                                │ │
+│        │ │ auto-save     │ true                                     │ │
+│        │ │ bufferline    │ multiple                                 │ │
+│        │ │ color-modes   │ true                                     │ │
+│        │ │               │ ╭────────┬───────╮                       │ │
+│        │ │ cursor-shape  │ │ insert │ bar   │                       │ │
+│        │ │               │ │ normal │ block │                       │ │
+│        │ │               │ │ select │ block │                       │ │
+│        │ │               │ ╰────────┴───────╯                       │ │
+│        │ │ cursorline    │ true                                     │ │
+│        │ │               │ ╭────────┬───────╮                       │ │
+│        │ │ file-picker   │ │ hidden │ false │                       │ │
+│        │ │               │ ╰────────┴───────╯                       │ │
+│        │ │               │ ╭─────────────┬──────╮                   │ │
+│        │ │ indent-guides │ │ render      │ true │                   │ │
+│        │ │               │ │ skip-levels │ 1    │                   │ │
+│        │ │               │ ╰─────────────┴──────╯                   │ │
+│        │ │ line-number   │ relative                                 │ │
+│        │ │ mouse         │ true                                     │ │
+│        │ │               │ ╭───┬─────╮                              │ │
+│        │ │ shell         │ │ 0 │ zsh │                              │ │
+│        │ │               │ │ 1 │ -c  │                              │ │
+│        │ │               │ ╰───┴─────╯                              │ │
+│        │ │               │ ╭───────────┬──────────────────────────╮ │ │
+│        │ │ statusline    │ │           │ ╭───┬───────────╮        │ │ │
+│        │ │               │ │ center    │ │ 0 │ file-name │        │ │ │
+│        │ │               │ │           │ ╰───┴───────────╯        │ │ │
+│        │ │               │ │           │ ╭───┬─────────╮          │ │ │
+│        │ │               │ │ left      │ │ 0 │ mode    │          │ │ │
+│        │ │               │ │           │ │ 1 │ spinner │          │ │ │
+│        │ │               │ │           │ ╰───┴─────────╯          │ │ │
+│        │ │               │ │           │ ╭────────┬────────╮      │ │ │
+│        │ │               │ │ mode      │ │ insert │ INSERT │      │ │ │
+│        │ │               │ │           │ │ normal │ NORMAL │      │ │ │
+│        │ │               │ │           │ │ select │ SELECT │      │ │ │
+│        │ │               │ │           │ ╰────────┴────────╯      │ │ │
+│        │ │               │ │           │ ╭───┬──────────────────╮ │ │ │
+│        │ │               │ │ right     │ │ 0 │ diagnostics      │ │ │ │
+│        │ │               │ │           │ │ 1 │ selections       │ │ │ │
+│        │ │               │ │           │ │ 2 │ position         │ │ │ │
+│        │ │               │ │           │ │ 3 │ file-encoding    │ │ │ │
+│        │ │               │ │           │ │ 4 │ file-line-ending │ │ │ │
+│        │ │               │ │           │ │ 5 │ file-type        │ │ │ │
+│        │ │               │ │           │ ╰───┴──────────────────╯ │ │ │
+│        │ │               │ │ separator │ │                        │ │ │
+│        │ │               │ ╰───────────┴──────────────────────────╯ │ │
+│        │ │ true-color    │ true                                     │ │
+│        │ │               │ ╭────────┬─────╮                         │ │
+│        │ │ whitespace    │ │ render │ all │                         │ │
+│        │ │               │ ╰────────┴─────╯                         │ │
+│        │ ╰───────────────┴──────────────────────────────────────────╯ │
+│        │ ╭────────┬──────────────────────────────────────────╮        │
+│ keys   │ │        │ ╭─────┬────────────────────────────────╮ │        │
+│        │ │ normal │ │     │ ╭───┬────────────────────────╮ │ │        │
+│        │ │        │ │ \   │ │   │ ╭───┬────────────────╮ │ │ │        │
+│        │ │        │ │     │ │ c │ │ o │ :config-open   │ │ │ │        │
+│        │ │        │ │     │ │   │ │ r │ :config-reload │ │ │ │        │
+│        │ │        │ │     │ │   │ ╰───┴────────────────╯ │ │ │        │
+│        │ │        │ │     │ │ q │ :q                     │ │ │        │
+│        │ │        │ │     │ │ w │ :w                     │ │ │        │
+│        │ │        │ │     │ │ x │ :x                     │ │ │        │
+│        │ │        │ │     │ ╰───┴────────────────────────╯ │ │        │
+│        │ │        │ │ ret │ open_below                     │ │        │
+│        │ │        │ ╰─────┴────────────────────────────────╯ │        │
+│        │ ╰────────┴──────────────────────────────────────────╯        │
+│ theme  │ fleet_dark                                                   │
+ls
+cd .config/helix/
+ls
+e test.txt
+ls
+open config.toml
+(open config.toml).keys
+(open config.toml).keys.\
+(open config.toml).keys.\\
+(open config.toml).keys."\\"
+(open config.toml).keys."\\\\"
+(open config.toml).keys.
+(open config.toml).keys.normal
+(open config.toml).keys.normal.\
+(open config.toml).keys
+fetch https://blog.rust-lang.org/feed.xml
+(fetch https://blog.rust-lang.org/feed.xml).feed.children
+cd
+echo "Hello World"
+echo "Hello World" | lines
+echo "Hello World" | lines | split
+echo "Hello World" | lines | split column " "
+echo "Hello World" | lines | split column " " 1 2
+echo "Hello World" | lines | split column " " " " " "
+echo "Hello World" | lines | split column " " 1 2
+\ls
+ls
+ls | table
+echo "Hello World" | table
+printf "Hello World!\nGoodbye World!\n" | table
+printf "Hello World!\nGoodbye World!\n" | lines
+table
+ls
+ls | to text
+ls | cat
+ls
+echo "Hello World\n" | table
+$'whoami'
+'<\n>'
+/
+/~
+~
+\r
+[hello]
+{a:l}
+{0: 1}
+[[1 2]; [Hello World!] [Goodbye World!]]
+[[1 2]; [Hello World!] [Goodbye World!]] | describe 
+[[1 2]; [Hello World!] [Goodbye World!]]
+hello
+c
+shells 
+^
+^'whoami'
+$"^'whoami'"
+echo "hello" "world"
+echo "hello"
+$env.EDITOR
+config nu
+e
+se
+config nu
+e
+se
+config nu
+e
+se
+$env.EDITOR
+eval $env.EDITOR
+run-external $env.EDITOR
+config nu
+e
+se
+ls
+e distros.txt
+config nu
+e Music/
+e .
+(whoami)
+$"Hello (whoami)!"
+sys
+sys.host
+(sys).host
+(sys).host.sessions
+(sys).host.sessions.name
+(sys).host.sessions.name.arch
+(sys).host.sessions
+l
+ls
+ls -la
+ls
+"red,green,blue" | split row ","
+"red,green,blue" | split column ","
+"red,green,blue" | split chars 
+"red,green,blue" | split list 
+"red,green,blue" | split list ','
+"red,green,blue" | split words 
+"red,green,blue" | split column ","
+"hello world" | str contains "o wo"
+"hello world" | str index-of 'l'
+'Nushell 0.80' | parse '{shell} {version}'
+'true'
+'true' | into bool 
+0 | into bool 
+ansi gradient 'l'
+ansi gradient 'lol'
+echo 'lol' | ansi gradient
+echo 'lol' | ansi gradient fg
+ansi strip 
+ansi pruple
+ansi purple
+ansi purple; print 'hai'
+ansi red; print 'hai'
+$'(ansi purple_bold)This text is a bold purple!(ansi reset)'
+$'(ansi red_bold)This text is a bold red!(ansi reset)'
+list
+[1 [2 3] 4 [5 6]]
+[1 [2 3] 4 [5 6]] | flatten 
+sys
+sys | flatten 
+ls
+sys | flatten | flatten | flatten
+[UTC CET Europe/Moscow Asia/Yekaterinburg]
+[UTC CET Europe/Moscow Asia/Yekaterinburg] | wrap 'Zone'
+l
+ls
+ls | sort-by size
+ls | sort-by modified
+ls | sort-by type
+ls | sort-by type | rev 
+ls | sort-by type | reverse 
+ls -a | sort-by type | reverse 
+ls | sort-by type | reverse 
+cd /
+ls | sort-by type | reverse 
+cd
+ls | sort-by type | reverse 
+ls
+ls | select name
+ls | select name type
+ls | select name
+ls
+ls | select name
+ls | select name | to text
+ls | select name
+(ls).name
+ls | select name
+ls | get name
+ls | select name
+ls
+ls | upsert type 0
+ls | upsert type 1
+ls | upsert type 23
+ls | upsert 0 1
+ls | upsert 0 2
+ls | upsert 0 3
+ls | upsert 0 
+ls | upsert 
+ls | upsert type 0
+ls | upsert 14 0
+ls
+c
+def greet [name?: string] {<\n>  if ($name == null) {<\n>    "Hello, I don't know your name!"<\n>  } else {<\n>    $"Hello ($name)"<\n>  }<\n>}
+greet
+greet lol
+def greet [<\n>  name: string<\n>  --age (-a): int<\n>] {<\n>  [$name $age]<\n>}
+help greet
+greet -h
+greet --help
+# A greeting command that can greet the caller
+def greet [<\n>  name: string      # The name of the person to greet<\n>  --age (-a): int   # The age of the person<\n>] {<\n>  [$name $age]<\n>}
+help greet
+def double [] {<\n>  each { |it| 2 * $it }<\n>}
+[1 2 3]
+[1 2 3] | double 
+$nu.scope.aliases
+let my_value = [[name]; [testuser]]
+$my_value
+$my_value.name
+$my_value.name.testuser
+$my_value.name.0
+$dark_theme
+$env
+fzf
+ls
+$in
+$light_theme
+$nothing
+$nu
+$nu.os-info
+$nu
+$nu.scope.aliases
+$nu.scope.commands
+help commands
+$nu.scope.commands
+help commands
+$nu.scope.commands
+help commands
+$nu.scope.commands
+help commands
+(ls).name
+ls
+ls | get name
+ls
+sl
+ls
+cd testing/
+ls
+touch test.nu
+ls
+e test.nu
+ls
+config nu
+source ~/.config/nushell/config.nu
+ls
+x test.nu
+ls
+./test.nu
+e test.nu
+./test.nu
+e test.nu
+./test.nu
+./test.nu 100
+hide *
+e
+hide e
+e
+ls
+e
+help config
+$env.config
+$env
+$env.config
+c
+config nu
+c
+config nu
+ls
+vim .config/nushell/config.nu
+nvim .config/nushell/config.nu
+config nu
+config
+config env
+config nu
+ls
+whoami
+ls
+config nu
+config env
+{<\n><\n><\n><\n><\n><\n><\n><\n><\n><\n><\n><\n><\n><\n><\n><\n>}
+config env
+ls
+{<\n>a<\n>}
+:
+;
+$env.EDITOR
+$env.VISUAL
+config nu
+config env
+whoami
+ls
+$env
+config env
+$env
+$env | rg .
+$env | rg zsh
+$env | rg nu
+ls
+$config
+$nu.config
+$env.config
+$env.config | rg .
+ls
+e .config/nushell/history.txt
+$nu.loginshell-path
+$env._
+ls
+env
+$env.PWD
+let-env PWD = "/"
+do -i {whoami} | complete 
+do -i {ca} | complete 
+do -i {cat /etc/pz} | complete 
+do -i { cat unknown.txt } | complete
+$env.LAST_EXIT_CODE
+cat unknown.txt
+$env.LAST_EXIT_CODE
+complete 
+ld
+ls
+^ls
+^exa
+exa
+ls
+let-env STARSHIP_SHELL = "nu"
+def create_left_prompt [] {<\n>    starship prompt --cmd-duration $env.CMD_DURATION_MS $'--status=($env.LAST_EXIT_CODE)'<\n>}
+# Use nushell functions to define your right and left prompt
+let-env PROMPT_COMMAND = { create_left_prompt }
+let-env PROMPT_COMMAND_RIGHT = ""
+# The prompt indicators are environmental variables that represent
+# the state of the prompt
+let-env PROMPT_INDICATOR = ""
+let-env PROMPT_INDICATOR_VI_INSERT = ": "
+let-env PROMPT_INDICATOR_VI_NORMAL = "〉"
+let-env PROMPT_MULTILINE_INDICATOR = "::: "
+ls
+sudo nu
+ls
+sudo nu
+ls
+config env
+ls
+enter /
+ls
+g
+n 
+p
+n
+g
+g 1
+ls
+n
+ls
+q
+cd
+g
+enter
+help enter
+ls
+c tes
+cd tes
+cd ..
+ls
+cd tes
+cd ..
+ls
+tes
+testing/
+ls
+/
+~
+ls
+cd Dow
+ls
+cd ..
+ls
+cd Downloads/
+ls
+open learntoml.toml
+e learntoml.toml
+open learntoml.toml
+rm learntoml.toml
+ls
+ls -la
+cd
+ls
+enter .
+g
+shells 
+g
+n
+g
+q
+ls | get name
+ls | select name
+l
+ls -a | select name
+config nu
+l
+config nu
+e .config/helix/config.toml
+helix .config/helix/config.toml
+config nu
+q
+ls
+e
+config nu
+config env
+ls
+config env
+ls
+config env
+ls
+enter .config/
+ls
+(ansi red) (whoami)
+$"(ansi red)(whoami)"
+ls
+c
+enter .config/
+ls
+enter ..
+g
+q
+config env
+q
+help help
+help q
+help man
+keybindings list --modifiers --keycodes --modes --events --edits
+c
+keybindings default 
+keybindings listen 
+keybindings default 
+$env
+$nu
+config nu
+math
+str reverse
+killall kitty
+rev
+man rev
+open .oh-my-zsh/plugins/emoji/gemoji_db.json
+extern 
+extern ls
+help table
+term
+term size
+help term
+help term size
+term size 
+config nu
+x
+c
+zsh
+ls | explore -i
+c
+explode 
+explore
+$nu | explore --peek
+explore
+explore -i
+explore
+ls
+ls
+c
+config nu
+e .configrc
+ls
+yay -S leftwm
+leftwm
+ls
+sudo find / -iname 'distros.txt'
+sudo find / -iname 'xsessions'
+cd /usr/share/xsessions/
+ls
+se leftwm.desktop
+cd
+cd .config/leftwm/
+ls
+e config.ron
+dmenu
+yay -S dmenu
+dmenu
+cd .config/leftwm/
+e config.ron
+ls
+cd .config/leftwm/
+e config.ron
+cd .config/leftwm/
+e config.ron
+b
+dmenu_run
+e .configrc
+cd
+se /etc/passwd
+ls
+ls -la
+ls
+[1 2 3] | double 
+[1 2 3] | do
+[1 2 3] | double
+[1 2 3]
+[[1 2 3]]
+[[1 2 3] [1 2 3]]
+[[1 2 3]; [1 2 3]]
+[[1 2 3] [1 2 3]]
+[[1 2 3]; [1 2 3]]
+explore
+ls -la
+ls | select name
+ls
+ls | select name
+def ls [] {<\n>ls | select name<\n>}
+s
+ls
+def ls [] {<\n>/bin/ls | select name<\n>}
+ls
+def ls [] {<\n>run-external ls | select name<\n>}
+ls
+def ls [] {ls | select name<\n>}
+def ls [] {ls | select name}
+ls
+whoami
+ll
+all
+help all
+all {}
+all {$in}
+all {$in == 0}
+all {$in == 1}
+all {$in == 43276578645}
+all {$in == "dfs"}
+all {$in != "dfs"}
+[5 6 7] | all {$in == "dfs"}
+[5 6 7] | all {$in == 5}
+ld
+ls
+ls 
+ls | select name
+ls
+zsh
+zsh
+ls
+ls | cat
+ls | cat | e
+c
+ls
+zsh
+source ~/.cache/starship/init.nu
+l
+ls
+whoami
+ls -la
+c
+ls
+cd /
+ls
+whoami
+sudo -s
+c
+ls
+ls /root
+sudo ls /root
+sudo ls -la /root
+c
+ls
+cd
+ls
+c
+ls
+cd pi
+cat pi
+c
+ls
+lenght
+str length 
+echo "Hello" | str length 
+cat pi | str length 
+c
+ls
+str
+c
+help all
+all
+all {$in != "dfs"}
+c
+help
+help help
+c
+cd .config/nushell/
+c
+ls
+e config.nu
+e env.nu
+c
+ls
+cd
+ls
+cd main/
+c
+ls
+rm helix/
+rm helix/ -rf
+c
+l
+ls -la
+c
+ls -a
+ls -a | select name
+c
+ls -a | select name
+ls -a
+c
+ls -a
+la
+c
+$nu | explore --peek
+c
+$nu
+ 
+c
+edit
+c
+ls
+config nu
+config env
+config nu
+q
+c
+e
+ll
+config nu
+ll
+cd /
+ll
+cd
+config nu
+l
+c
+la
+c
+ll
+c
+ls
+all
+c
+ls
+help commands
+c
+ls
+cd main/
+c
+ls
+la
+l
+c
+la
+rm .configrc
+la
+cp ~/.configrc .
+l
